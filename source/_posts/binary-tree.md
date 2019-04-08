@@ -3,7 +3,7 @@ title: 二叉树
 description: ' '
 date: 2019-04-08 13:53:43
 categories:
-  - algorithm
+  - notes
 tags:
   - algorithem
   - binary tree

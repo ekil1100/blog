@@ -1,0 +1,15 @@
+[submodule "next"]
+  path = themes/next
+  url = https://github.com/theme-next/hexo-theme-next.git
+
+[submodule "han"]
+  path = themes/source/lib/Han
+  url = https://github.com/theme-next/theme-next-han.git
+
+[submodule "pangu"]
+  path = themes/source/lib/pangu
+  url = https://github.com/theme-next/theme-next-pangu.git
+
+[submodule "reading-progress"]
+  path = themes/source/lib/reading_progress
+  url = https://github.com/theme-next/theme-next-reading-progress.git

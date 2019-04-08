@@ -25,3 +25,18 @@ scheme: Mist
 
 social:
   GitHub: https://github.com/lastingman || github
+
+sidebar:
+  display: hide
+  dimmer: true
+
+read_more_btn: false
+
+han: true
+
+pangu: true
+
+reading_progress:
+  enable: true
+  color: '#37c6c0'
+  height: 2px

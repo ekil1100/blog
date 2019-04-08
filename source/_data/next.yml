@@ -35,12 +35,13 @@ footer:
 
 disable_baidu_transformation: true
 
-scheme: Mist
+scheme: Gemini
 
 social:
   GitHub: https://github.com/lastingman || github
 
 sidebar:
+  width: 300
   display: hide
   dimmer: true
 

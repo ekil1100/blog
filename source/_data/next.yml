@@ -54,7 +54,7 @@ pangu: true
 reading_progress:
   enable: true
   color: '#37c6c0'
-  height: 2px
+  height: 4px
 
 symbols_count_time:
   separated_meta: true

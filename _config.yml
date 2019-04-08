@@ -88,3 +88,13 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+
+## next theme plugin
+reading_progress:
+  enable: true
+  color: '#37c6c0'
+  height: 4px
+
+han: true
+
+pangu: true

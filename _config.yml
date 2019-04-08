@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Like
+title: LIKE
 subtitle: Like's blog
-description:
+description: Stay simple, Stay pure.
 keywords: blog Like lastingman javascript
 author: Like
-language:
-timezone:
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -79,3 +79,12 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Custom setting
+
+## word counts
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true

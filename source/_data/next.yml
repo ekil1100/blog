@@ -6,6 +6,20 @@ favicon:
   android_manifest: /images/manifest.json
   ms_browserconfig: /images/browserconfig.xml
 
+menu:
+  home: / || home
+  #about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+menu_settings:
+  icons: true
+  badges: true
+
 footer:
   since: 2019
   icon:
@@ -40,3 +54,10 @@ reading_progress:
   enable: true
   color: '#37c6c0'
   height: 2px
+
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: true
+  awl: 4
+  wpm: 275

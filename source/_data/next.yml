@@ -1,10 +1,16 @@
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
-  apple_touch_icon: /images/apple-icon.png
-  safari_pinned_tab: /images/bow.svg
-  android_manifest: /images/manifest.json
-  ms_browserconfig: /images/browserconfig.xml
+  small: /images/favicon/favicon-16x16.png
+  medium: /images/favicon/favicon-32x32.png
+  apple_touch_icon: /images/favicon/apple-icon.png
+  safari_pinned_tab: /images/favicon/bow.svg
+  android_manifest: /images/favicon/manifest.json
+  ms_browserconfig: /images/favicon/browserconfig.xml
+
+avatar:
+  url: /images/avatar.png
+  rounded: true
+  opacity: 1
+  rotated: false
 
 menu:
   home: / || home

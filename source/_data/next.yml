@@ -51,7 +51,7 @@ sidebar:
   display: hide
   dimmer: true
 
-read_more_btn: false
+# read_more_btn: false
 
 han: true
 

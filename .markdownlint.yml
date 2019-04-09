@@ -3,3 +3,4 @@ no-emphasis-as-heading:
 line-length:
   line_length:
     boolean: false
+no-inline-html: false

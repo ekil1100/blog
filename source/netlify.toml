@@ -1,0 +1,5 @@
+[[redirects]]
+from = "https://likesblog.netlify.com/*"
+to = "https://lastingman.com/:splat"
+status = 301
+force = true

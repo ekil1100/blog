@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+!themes/next/source/lib/Han/
+!themes/next/source/lib/pangu/
+!themes/next/source/lib/reading_progress/

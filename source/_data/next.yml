@@ -1,0 +1,70 @@
+favicon:
+  small: /images/favicon/favicon-16x16.png
+  medium: /images/favicon/favicon-32x32.png
+  apple_touch_icon: /images/favicon/apple-icon.png
+  safari_pinned_tab: /images/favicon/bow.svg
+  android_manifest: /images/favicon/manifest.json
+  ms_browserconfig: /images/favicon/browserconfig.xml
+
+avatar:
+  url: /images/avatar.png
+  rounded: true
+  opacity: 1
+  rotated: false
+
+menu:
+  home: / || home
+  # about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || list
+  archives: /archives/ || archive
+  # schedule: /schedule/ || calendar
+  # sitemap: /sitemap.xml || sitemap
+  # commonweal: /404/ || heartbeat
+
+menu_settings:
+  icons: true
+  badges: true
+
+footer:
+  since: 2019
+  icon:
+    name: heart
+    animated: true
+    color: '#d81e06'
+  powered:
+    enable: false
+    version: false
+  theme:
+    enable: false
+    version: false
+
+disable_baidu_transformation: true
+
+scheme: Gemini
+
+social:
+  GitHub: https://github.com/lastingman || github
+
+sidebar:
+  width: 300
+  display: hide
+  dimmer: true
+
+# read_more_btn: false
+
+han: true
+
+pangu: true
+
+reading_progress:
+  enable: true
+  color: '#37c6c0'
+  height: 4px
+
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: true
+  awl: 4
+  wpm: 275

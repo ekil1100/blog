@@ -12,7 +12,7 @@ async function deploy(cmd) {
 }
 
 ;(async () => {
-  await deploy('git clone https://github.com/theme-next/hexo-theme-next.git themes/next')
+  // await deploy('git clone https://github.com/theme-next/hexo-theme-next.git themes/next')
   await deploy('git clone https://github.com/theme-next/theme-next-han.git themes/next/source/lib/Han')
   await deploy('git clone https://github.com/theme-next/theme-next-pangu.git themes/next/source/lib/pangu')
   await deploy(

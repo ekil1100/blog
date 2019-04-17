@@ -18,6 +18,7 @@
     "hexo-symbols-count-time": "^0.4.4"
   },
   "scripts": {
-    "deploy": "node deploy.js"
+    "deploy": "node deploy.js",
+    "build": "node pull-modules.js && hexo generate"
   }
 }

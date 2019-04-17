@@ -29,7 +29,7 @@ tags:
 }
 ```
 
-![justify-items-center.png](https://blog-1257068948.cos.ap-hongkong.myqcloud.com/justify-items-center.png)
+{% cdn justify-items-center.png %}
 
 ### align-items
 
@@ -42,7 +42,7 @@ tags:
 }
 ```
 
-![align-items-center.png](https://blog-1257068948.cos.ap-hongkong.myqcloud.com/align-items-center.png)
+{% cdn align-items-center.png %}
 
 ### justify-self
 
@@ -57,7 +57,7 @@ tags:
 </div>
 ```
 
-![justify-self.png](https://blog-1257068948.cos.ap-hongkong.myqcloud.com/justify-self.png)
+{% cdn justify-self.png %}
 
 ### align-self
 
@@ -72,7 +72,7 @@ tags:
 </div>
 ```
 
-![align-self.png](https://blog-1257068948.cos.ap-hongkong.myqcloud.com/align-self.png)
+{% cdn align-self.png %}
 
 ## 案例模板 2
 
@@ -96,7 +96,7 @@ tags:
 }
 ```
 
-![justify-content-center.png](https://blog-1257068948.cos.ap-hongkong.myqcloud.com/justify-content-center.png)
+{% cdn justify-content-center.png %}
 
 ### align-content
 
@@ -107,7 +107,7 @@ tags:
 }
 ```
 
-![align-content-center.png](https://blog-1257068948.cos.ap-hongkong.myqcloud.com/align-content-center.png)
+{% cdn align-content-center.png %}
 
 ## Change log
 

@@ -98,3 +98,6 @@ reading_progress:
 han: true
 
 pangu: true
+
+## custom script
+cdn: 'https://blog-1257068948.cos.ap-hongkong.myqcloud.com/'

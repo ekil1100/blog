@@ -100,4 +100,5 @@ han: true
 pangu: true
 
 ## custom script
-cdn: 'https://blog-1257068948.cos.ap-hongkong.myqcloud.com/'
+# cdn: 'https://blog-1257068948.cos.ap-hongkong.myqcloud.com/'
+cdn: 'https://api.likezheng.org/ipfs/Qmeb4DRxEAhsht6EKoWUL9utfJ5pbbsabEVjTtZCjDbsi8/'

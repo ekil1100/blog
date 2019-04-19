@@ -19,6 +19,7 @@
   },
   "scripts": {
     "deploy": "node deploy.js",
+    "pull": "node pull-modules.js",
     "build": "node pull-modules.js && hexo generate"
   }
 }

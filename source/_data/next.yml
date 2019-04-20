@@ -104,6 +104,7 @@ gitalk:
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
   language:
 
+######################## analytics
 # Baidu Analytics ID
 baidu_analytics: 6f67c17b22d42842126f6dc9105691a5
 
@@ -111,3 +112,13 @@ baidu_analytics: 6f67c17b22d42842126f6dc9105691a5
 google_analytics:
   tracking_id: UA-138664390-1
   localhost_ignored: true
+
+######################### other setting
+
+# show number of visitors to each article.
+firestore:
+  enable: true
+  collection: articles #required, a string collection name to access firestore database
+  apiKey: AIzaSyDF0ZGgoUuzyTLV4QwtjRejdAcLTV7Q2TE
+  projectId: like-121212
+  bluebird: true #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill

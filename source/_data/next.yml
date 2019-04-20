@@ -119,6 +119,6 @@ google_analytics:
 firestore:
   enable: true
   collection: articles #required, a string collection name to access firestore database
-  apiKey: AIzaSyDF0ZGgoUuzyTLV4QwtjRejdAcLTV7Q2TE
-  projectId: like-121212
+  apiKey: AIzaSyA4Fx0QxkH-2FqlWo3EroEXEAdcub7YD68
+  projectId: blog-921212
   bluebird: true #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill

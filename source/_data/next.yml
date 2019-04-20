@@ -94,7 +94,7 @@ symbols_count_time:
 gitalk:
   enable: true
   github_id: lastingman # Github repo owner
-  repo: https://github.com/lastingman/blog-like # Repository name to store issues
+  repo: blog-like # Repository name to store issues
   client_id: d9746a249c09c71b1092 # Github Application Client ID
   client_secret: 7ca491b5043694a5753a798e14436a315ca755a0 # Github Application Client Secret
   admin_user: lastingman # GitHub repo owner and collaborators, only these guys can initialize github issues

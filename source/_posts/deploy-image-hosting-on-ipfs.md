@@ -1,7 +1,7 @@
 ---
 title: 如何利用ipfs部署图床
 slug: 如何利用ipfs部署图床
-description: ''
+description: ' '
 categories:
   - ipfs日志
 tags:
@@ -9,7 +9,6 @@ tags:
   - server
 date: 2019-04-20 17:25:12
 ---
-
 
 ## 前言
 
@@ -190,5 +189,3 @@ ipfs daemon --enable-gc > ipfs.log &
 ```
 
 重新访问`[your server ip]/webui`，可以看到 UI 界面变了，你可以在这里上传文件，并通过`[your server ip]/ipfs/[CID]` 访问你上传的文件 🎉。
-
-## 总结

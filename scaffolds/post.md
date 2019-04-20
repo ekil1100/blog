@@ -2,7 +2,7 @@
 title: {{ title }}
 slug: {{ slug }}
 date: {{ date }}
-description: ''
+description: ' '
 categories:
 tags:
 ---

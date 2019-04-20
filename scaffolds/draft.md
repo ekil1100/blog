@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 slug: {{ slug }}
-description: ''
+description: ' '
 categories:
 tags:
 ---

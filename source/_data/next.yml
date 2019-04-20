@@ -90,7 +90,7 @@ symbols_count_time:
   awl: 4
   wpm: 275
 
-################################### Gitalk
+###################### Gitalk
 gitalk:
   enable: true
   github_id: lastingman # Github repo owner
@@ -103,3 +103,11 @@ gitalk:
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
   language:
+
+# Baidu Analytics ID
+baidu_analytics: 6f67c17b22d42842126f6dc9105691a5
+
+# Google Analytics
+google_analytics:
+  tracking_id: UA-138664390-1
+  localhost_ignored: true

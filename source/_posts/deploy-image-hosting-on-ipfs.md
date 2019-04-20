@@ -3,7 +3,7 @@ title: 如何利用ipfs部署图床
 slug: deploy-image-hosting-on-ipfs
 description: ' '
 categories:
-  - ipfs日志
+  - ipfs
 tags:
   - ipfs
   - server

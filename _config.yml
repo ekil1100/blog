@@ -5,8 +5,8 @@
 # Site
 title: Like
 subtitle: Do one thing and do it well.
-description: Stay simple, foolish and hungry.
-keywords: blog Like lastingman javascript
+description: 不羁、懒惰、喜欢幻想、热爱自由。
+keywords: blog likezheng lastingman front-end coding 郑力可 博客 代码 前端
 author: Like
 language: zh-CN
 timezone: Asia/Shanghai
@@ -80,7 +80,7 @@ theme: next
 deploy:
   type:
 
-# Custom setting
+###################################################### plugin setting
 
 ## word counts
 symbols_count_time:
@@ -99,6 +99,7 @@ han: true
 
 pangu: true
 
-## custom script
-# cdn: 'https://blog-1257068948.cos.ap-hongkong.myqcloud.com/'
+#################################################### custom config
+
+# cdn tag plugin
 cdn: 'https://likezheng.org/ipfs/QmNd9apUAfzP8UaBHv2tcYYQKxP4ygNmt9WZU1ywna9r4m/'

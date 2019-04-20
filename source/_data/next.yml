@@ -16,7 +16,7 @@ menu:
   home: / || home
   # about: /about/ || user
   tags: /tags/ || tags
-  categories: /categories/ || list
+  categories: /categories/ || th-list
   archives: /archives/ || archive
   # schedule: /schedule/ || calendar
   # sitemap: /sitemap.xml || sitemap
@@ -41,10 +41,23 @@ footer:
 
 disable_baidu_transformation: true
 
-scheme: Gemini
+seo: true
+
+exturl: true
+
+# See: https://ziyuan.baidu.com/site
+baidu_site_verification: qRUXSViisE
+
+scheme: Muse
 
 social:
   GitHub: https://github.com/lastingman || github
+  E-Mail: mailto:keithleaves@gmail.com || envelope
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: false
 
 sidebar:
   width: 300

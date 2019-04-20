@@ -3,7 +3,7 @@ title: Hexo 入门
 description: ' '
 date: 2019-04-08 13:50:44
 categories:
-  - hexo notes
+  - hexo
 tags:
   - hexo
   - blog

@@ -48,6 +48,9 @@ exturl: true
 baidu_push: true
 
 scheme: Muse
+#scheme: Mist
+# scheme: Pisces
+#scheme: Gemini
 
 social:
   GitHub: https://github.com/lastingman || github

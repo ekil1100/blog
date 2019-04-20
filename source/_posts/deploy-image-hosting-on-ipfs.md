@@ -1,12 +1,15 @@
 ---
 title: 如何利用ipfs部署图床
+slug: 如何利用ipfs部署图床
 description: ''
 categories:
   - ipfs日志
 tags:
   - ipfs
   - server
+date: 2019-04-20 17:25:12
 ---
+
 
 ## 前言
 
@@ -62,12 +65,9 @@ echo "export PATH=$PATH:$HOME/go/bin" >> .bash_profile
 echo "export GOPATH=$HOME/go" >> .bash_profile
 
 source .bash_profile
-
-# install ipfs
-ipfs-update install latest
 ```
 
-安装完成后你会看到下面这个提示：
+安装 ipfs：
 
 ```bash
 $ ipfs-update install latest
@@ -130,18 +130,8 @@ Daemon is ready
 实现后台运行：
 
 ```bash
-$ ipfs daemon > ipfs.log &
+$ ipfs daemon --enable-gc > ipfs.log &
 [1] 5497
-
-# check running daemon
-$ ps
-  PID TTY          TIME CMD
- 1537 pts/0    00:00:00 bash
- 5497 pts/0    00:00:00 ipfs
- 5517 pts/0    00:00:00 ps
-
-# exit ipfs
-$ kill 5497
 ```
 
 接下来我们安装`nginx`:
@@ -150,7 +140,7 @@ $ kill 5497
 sudo apt install nginx -y
 ```
 
-安装完成后，通过`vim`修改配置，下面提供了我的配置，直接照抄就好。
+安装完成后，通过`vim`修改配置，下面提供了配置，直接照抄就好。
 
 ```bash
 sudo vim /etc/nginx/sites-available/default
@@ -158,23 +148,47 @@ sudo vim /etc/nginx/sites-available/default
 
 ```bash
 server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
-  root /var/www/html;
-  index index.html index.htm index.nginx-debian.html;
   server_name _;
   location / {
-    proxy_pass http://127.0.0.1:5001/;
+    proxy_pass http://127.0.0.1:5001;
   }
-}
-
-server {
-  listen 81;
-  root /var/www/html;
-  index index.html index.htm index.nginx-debian.html;
-  server_name _;
-  location / {
-    proxy_pass http://127.0.0.1:8080/;
+  location /ipfs/
+  {
+    proxy_pass http://127.0.0.1:8080;
   }
 }
 ```
+
+启动`nginx`服务：
+
+```bash
+sudo service nginx start
+```
+
+在本地浏览器访问 `[your server ip]/webui` 就可以看到 ipfs 的 UI 界面了 😃 。
+
+第一次加载可能会有些慢，请耐心等待。
+
+如果加载失败，请重启`nginx`。
+
+```bash
+sudo service nginx restart
+```
+
+{% cdn ipfs-webui.png %}
+
+在 UI 界面上可以看到两行命令，复制他们，并在服务器上执行。
+
+```bash
+# excute copied command
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://[your server ip]", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
+
+# restart ipfs daemon
+kill -9 $(ps | grep 'ipfs' | cut -d' ' -f1)
+ipfs daemon --enable-gc > ipfs.log &
+```
+
+重新访问`[your server ip]/webui`，可以看到 UI 界面变了，你可以在这里上传文件，并通过`[your server ip]/ipfs/[CID]` 访问你上传的文件 🎉。
+
+## 总结

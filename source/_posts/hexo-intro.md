@@ -3,40 +3,41 @@ title: Hexo 入门
 description: ' '
 date: 2019-04-08 13:50:44
 categories:
-  - notes
+  - hexo notes
 tags:
   - hexo
   - blog
 ---
 
-## 安装
+## 准备
 
 在安装之前需要确保系统已经安装了：
 
-- [`git`](https://git-scm.com/)
-- [`nodejs`](https://nodejs.org/zh-cn/)
-
-运行下面的命令来检查是否安装：
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/zh-cn/)
 
 ```bash
 # 检查 git 是否安装
-$ git --version
+git --version
+
 # 检查 nodejs 是否安装
-$ node --version
+node --version
 ```
 
-然后就可以安装 `Hexo` 的命令行工具了，运行下面的命令：
+如果没有安装，请跳转至 [Git](https://git-scm.com/downloads) 和 [Node.js](https://nodejs.org/zh-cn/) 官方网站安装，
+
+## 安装
+
+安装 `Hexo` 的命令行工具：
 
 ```bash
 npm i -g hexo-cli
 ```
 
-## 配置
-
-安装成功以后运行下面的命令创建工作目录：
+创建工作目录：
 
 ```bash
-hexo init <FLODER NAME> && cd <FOLDER NAME>
+hexo init [folder name] && cd [folder name]
 ```
 
 安装依赖包：
@@ -59,35 +60,41 @@ git clone https://github.com/theme-next/hexo-theme-next themes/next
 theme: next
 ```
 
-`Next` 主题配置：
+`Next theme`配置：
 
 - 创建 `source/_data/next.yml` 文件。
-- 在 `themes/next` 目录下有个默认的配置文件 `_config.yml`，可以根据自己的需求从 `_config.yml` 选择需要的配置复制到 `source/_data/next.yml` 中。
+- 在 `themes/next` 目录下有个默认的配置文件 `_config.yml`，可以根据自己的需求从 `_config.yml` 选择需要的配置复制到 `source/_data/next.yml` 中进行修改。
 - [Next 文档](https://theme-next.org/docs/getting-started/) 中有非常详细的配置介绍。
 
-## 工作流程
+## 其他指令
 
 创建新的 post：
 
 ```bash
-hexo new post <file name>
+hexo new post [file name]
 ```
 
 创建新的 draft:
 
 ```bash
-hexo new draft <file name>
+hexo new draft [file name]
 ```
 
 从 draft 发布新的 post：
 
 ```bash
-hexo publish <file name>
+hexo publish post [file name]
 ```
 
-运行 `hexo server`：
+运行本地服务 `hexo server`：
 
 ```bash
+# run dev server
+hexo server
+
+# or
+
+# render drafts
 hexo server -d
 ```
 

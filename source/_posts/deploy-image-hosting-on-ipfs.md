@@ -184,7 +184,7 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://[your s
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
 
 # restart ipfs daemon
-kill -9 $(ps | grep 'ipfs' | cut -d' ' -f1)
+kill -9 $(ps -A | grep 'ipfs' | cut -d' ' -f1)
 ipfs daemon --enable-gc > ipfs.log &
 ```
 

@@ -89,6 +89,11 @@ symbols_count_time:
   total_symbols: true
   total_time: true
 
+## sitemap
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+
 ## next theme plugin
 reading_progress:
   enable: true

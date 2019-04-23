@@ -92,7 +92,6 @@ symbols_count_time:
 ## sitemap
 sitemap:
   path: sitemap.xml
-  template: ./sitemap_template.xml
 
 ## next theme plugin
 reading_progress:

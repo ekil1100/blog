@@ -39,8 +39,6 @@ footer:
     enable: false
     version: false
 
-disable_baidu_transformation: true
-
 seo: true
 
 exturl: true

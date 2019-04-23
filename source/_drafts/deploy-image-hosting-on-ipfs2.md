@@ -8,3 +8,5 @@ tags:
   - ipfs
   - server
 ---
+
+{% cdnfi ipfs-webui.png @lazy %}

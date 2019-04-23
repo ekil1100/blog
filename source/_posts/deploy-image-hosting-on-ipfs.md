@@ -174,7 +174,7 @@ sudo service nginx start
 sudo service nginx restart
 ```
 
-{% cdn ipfs-webui.png %}
+{% cdnfi ipfs-webui.png %}
 
 在 UI 界面上可以看到两行命令，复制他们，并在服务器上执行。
 

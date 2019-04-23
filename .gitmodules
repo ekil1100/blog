@@ -13,3 +13,7 @@
 [submodule "reading-progress"]
   path = themes/next/source/lib/reading_progress
   url = https://github.com/theme-next/theme-next-reading-progress.git
+  
+[submodule "fancybox3"]
+  path = themes/next/source/lib/fancybox
+  url = https://github.com/theme-next/theme-next-fancybox3.git

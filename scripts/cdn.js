@@ -1,8 +1,10 @@
 'use strict'
 
 function cdn(args) {
-  let filename = args[0]
-  return `<img src="${hexo.config.cdn}${this.slug}/${filename}" alt="${filename}">`
+  args = args.join(' ').split(',')
+  let img = args[0]
+  let title = args[1] || ''
+  return `<img src="${hexo.config.cdn}${this.slug}/${img}" alt="${title}">`
 }
 
 hexo.extend.tag.register('cdn', cdn)

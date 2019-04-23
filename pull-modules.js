@@ -18,4 +18,5 @@ async function deploy(cmd) {
   await deploy(
     'git clone https://github.com/theme-next/theme-next-reading-progress.git themes/next/source/lib/reading_progress'
   )
+  await deploy('git clone https://github.com/theme-next/theme-next-fancybox3.git themes/next/source/lib/fancybox')
 })()

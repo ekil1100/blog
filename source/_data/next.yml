@@ -93,6 +93,8 @@ symbols_count_time:
   awl: 4
   wpm: 275
 
+fancybox: true
+
 ###################### Gitalk
 gitalk:
   enable: true

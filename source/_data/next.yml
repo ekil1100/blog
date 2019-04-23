@@ -115,16 +115,12 @@ baidu_analytics: 6f67c17b22d42842126f6dc9105691a5
 google_analytics:
   tracking_id: UA-138664390-1
   localhost_ignored: true
-
 ######################### other setting
-
 # show number of visitors to each article.
-leancloud_visitors:
-  enable: false
-  app_id: njt7Hc3JXLwnYxS4DhbOx3dA-gzGzoHsz
-  app_key: qjg1IoY4eoUIYdI81bm7CmYs
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in leancloud counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: false
-  betterPerformance: false
+# firestore:
+#   enable: true
+#   collection: articles
+#   apiKey: AIzaSyA4Fx0QxkH-2FqlWo3EroEXEAdcub7YD68
+#   projectId: blog-921212
+#   bluebird: true
+

@@ -10,22 +10,7 @@ tags:
   - version controll
 ---
 
-1. [Git Flow 流程的简单介绍](#git-flow-流程的简单介绍)  
-   &emsp;1.1. [Master 和 Develop 分支](#master和develop分支)  
-   &emsp;1.2. [Feature 分支](#feature分支)  
-   &emsp;1.3. [Release 分支](#release分支)  
-   &emsp;1.4. [Hotfix 分支](#hotfix分支)  
-   &emsp;1.5. [其他指令](#其他指令)
-2. [轻松实现 git flow, 抛弃繁琐的指令](#轻松实现git-flow-抛弃繁琐的指令)  
-   &emsp;2.1. [`git-flow`初始化](#git-flow初始化)  
-   &emsp;2.2. [Feature 分支](#feature分支)  
-   &emsp;2.3. [Release 分支](#release分支)  
-   &emsp;2.4. [Hotfix 分支](#hotfix分支)
-3. [参考资料](#参考资料)
-
----
-
-## Git Flow 流程的简单介绍
+## Gitflow 介绍
 
 ### Master 和 Develop 分支
 

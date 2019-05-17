@@ -13,7 +13,7 @@ async function deploy(cmd) {
 
 (async () => {
   await deploy('git checkout master');
-  await deploy('git merge dev');
+  await deploy('git merge --no-ff dev');
   await deploy('git push origin master');
   await deploy('git checkout dev');
 })();

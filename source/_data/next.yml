@@ -62,7 +62,7 @@ sidebar:
   display: hide
   dimmer: true
 
-highlight_theme: night bright
+highlight_theme: night eighties
 
 tagcloud:
   enable: true

@@ -184,7 +184,3 @@ export V2RAY=/usr/local/etc/v2ray
 ```
 
 v2ray 的定位是平台，所以它的功能是非常强大的，代理只是它的其中一个小功能。
-
-## Change log
-
-- 2019-3-26 create

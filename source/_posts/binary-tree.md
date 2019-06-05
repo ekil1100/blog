@@ -7,6 +7,7 @@ categories:
 tags:
   - algorithem
   - binary tree
+  - python
 ---
 
 树是一种数据结构，用来模拟具有树状结构的数据集合。二叉树是指每个节点至多有两个子节点的树。

@@ -1,5 +1,18 @@
 'use strict';
 
+function ipfs(args) {
+  args = args.join(' ').split(',');
+  let img = args[0];
+  let alt = args[1] || '';
+  let title = args[2] || '';
+  let width = args[3] || '';
+  return `<img src="${
+    hexo.config.gateway
+  }${img}" alt="${alt}" title="${title}" style="max-width: 100%; width:${width};">`;
+}
+
+hexo.extend.tag.register('ipfs', ipfs);
+
 function cdn(args) {
   args = args.join(' ').split(',');
   let img = args[0];

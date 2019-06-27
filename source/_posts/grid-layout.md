@@ -29,7 +29,7 @@ tags:
 }
 ```
 
-{% cdn justify-items-center.png %}
+{% ipfs QmNxBBszArR4ZJmwrFXrNVPDRL2oYLZadgsRLP9MtK3aY4,"justify-items: center" %}
 
 ### align-items
 
@@ -42,7 +42,7 @@ tags:
 }
 ```
 
-{% cdn align-items-center.png %}
+{% ipfs QmWb4R11dAeKzrmgDQiCpHh3MGaNdgiNxQuij4RJDSHenV, "align-items: center" %}
 
 ### justify-self
 
@@ -57,7 +57,7 @@ tags:
 </div>
 ```
 
-{% cdn justify-self.png %}
+{% ipfs QmXSg8Xp1AbEWvGaTCXG81dW3pLSSXRVMkCDU5CYkfakAT, "justify-self" %}
 
 ### align-self
 
@@ -72,7 +72,7 @@ tags:
 </div>
 ```
 
-{% cdn align-self.png %}
+{% ipfs QmYm1FKjQGhNDzHygM992Ea6X7H6QiJQoTSWrEdr3ndEkv, "align-self" %}
 
 ## 案例模板 2
 
@@ -96,7 +96,7 @@ tags:
 }
 ```
 
-{% cdn justify-content-center.png %}
+{% ipfs QmehTc9JNoKnrSec2kcBZ7JfPu7tWkCGXdCpYZisct4cPr, "justify-content: center" %}
 
 ### align-content
 
@@ -107,7 +107,7 @@ tags:
 }
 ```
 
-{% cdn align-content-center.png %}
+{% ipfs Qme3VHtCXQ5B6XMgAJo4Fo9MsC2QRjw4f1UKXvU8HfhoZx, "align-content: center" %}
 
 ## Change log
 

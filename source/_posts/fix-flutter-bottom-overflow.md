@@ -36,7 +36,7 @@ class Example extends StatelessWidget {
 }
 ```
 
-{% cdn QmeN9jDejVyDxuuZ4ux1VezvswxXrvSrjBsNfdbxQCYN4r, true %}
+{% ipfs QmeN9jDejVyDxuuZ4ux1VezvswxXrvSrjBsNfdbxQCYN4r,"Use ListView",, 50% %}
 
 ## 方案 2
 
@@ -61,6 +61,6 @@ class Example extends StatelessWidget {
 }
 ```
 
-{% cdn QmSoUSCWMnbSRDf7YpBg1NmmZSrAX5UQKh7fmErfVNkty9, true %}
+{% ipfs QmSoUSCWMnbSRDf7YpBg1NmmZSrAX5UQKh7fmErfVNkty9,"Use SingleChildScrollView",, 50% %}
 
 两者的区别就是 `ListView` 不是 flex 的，它会填满横向的宽度。而 `SingleChildScrollView` 不会。

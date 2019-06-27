@@ -124,6 +124,5 @@ feed:
 
 #################################################### custom config
 
-# cdn tag plugin
-cdn: 'https://likezheng.org/ipfs/QmXV1yrNwwhPj5w5efLRAWPYwSky6pPCsfTCXm1uyXsUmq/'
+# ipfs cdn tag plugin
 gateway: 'https://likezheng.org/ipfs/'

@@ -99,8 +99,6 @@ reading_progress:
   color: '#37c6c0'
   height: 4px
 
-han: true
-
 pangu: true
 
 leancloud_visitors:

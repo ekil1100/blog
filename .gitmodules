@@ -1,19 +1,12 @@
 [submodule "next"]
   path = themes/next
   url = https://github.com/theme-next/hexo-theme-next.git
-  
-[submodule "han"]
-  path = themes/next/source/lib/Han
-  url = https://github.com/theme-next/theme-next-han.git
-
 [submodule "pangu"]
   path = themes/next/source/lib/pangu
   url = https://github.com/theme-next/theme-next-pangu.git
-
 [submodule "reading-progress"]
   path = themes/next/source/lib/reading_progress
   url = https://github.com/theme-next/theme-next-reading-progress.git
-  
 [submodule "fancybox3"]
   path = themes/next/source/lib/fancybox
   url = https://github.com/theme-next/theme-next-fancybox3.git

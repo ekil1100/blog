@@ -59,8 +59,7 @@ social_icons:
 
 sidebar:
   width: 300
-  display: hide
-  dimmer: true
+  display: post
 
 highlight_theme: night eighties
 
@@ -88,8 +87,6 @@ note:
   light_bg_offset: 0
 
 ##################### plugin settings
-han: true
-
 pangu: true
 
 reading_progress:

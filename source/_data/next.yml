@@ -122,7 +122,7 @@ gitalk:
 disqus:
   enable: true
   shortname: likes-blog
-  count: true
+  count: false
   lazyload: true
   #post_meta_order: 0
 

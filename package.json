@@ -23,8 +23,8 @@
     "start": "hexo server --draft",
     "clean": "hexo clean",
     "deploy": "node deploy.js",
-    "pull": "node clone-plugin.js",
-    "build": "npm run pull && hexo generate",
+    "plugin": "node clone-plugin.js",
+    "build": "npm run plugin && hexo generate",
     "push": "node push.js"
   }
 }

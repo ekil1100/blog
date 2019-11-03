@@ -105,7 +105,7 @@ fancybox: true
 
 ###################### Gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: lastingman # Github repo owner
   repo: blog-like # Repository name to store issues
   client_id: d9746a249c09c71b1092 # Github Application Client ID
@@ -116,6 +116,15 @@ gitalk:
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
   language:
+
+# Disqus #
+##########
+disqus:
+  enable: true
+  shortname: likes-blog
+  count: true
+  lazyload: true
+  #post_meta_order: 0
 
 ######################## analytics
 ## Baidu Analytics ID

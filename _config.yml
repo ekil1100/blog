@@ -5,8 +5,8 @@
 # Site
 title: Like
 subtitle: Do one thing and do it well.
-description: 不羁、懒散、喜欢幻想、热爱自由。
-keywords: blog likezheng lastingman front-end coding 郑力可 博客 代码 前端
+description: 不羁、喜欢幻想、热爱自由。
+keywords: blog likezheng lastingman front end coding 郑力可 博客 代码 前端
 author: Like
 language: zh-CN
 timezone: Asia/Shanghai
@@ -123,4 +123,5 @@ feed:
 #################################################### custom config
 
 # ipfs cdn tag plugin
+# gateway: 'https://gateway.ipfs.io/ipfs/'
 gateway: 'https://likezheng.org/ipfs/'

@@ -59,7 +59,7 @@ social_icons:
 
 sidebar:
   width: 300
-  display: post
+  display: none
 
 highlight_theme: night eighties
 
@@ -125,6 +125,7 @@ gitalk:
 google_analytics:
   tracking_id: UA-138664390-1
   localhost_ignored: true
+
 ######################### other setting
 # show number of visitors to each article.
 # firestore:

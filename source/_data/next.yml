@@ -43,10 +43,10 @@ seo: true
 
 exturl: true
 
-scheme: Muse
-#scheme: Mist
-# scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
 
 social:
   GitHub: https://github.com/lastingman || github

@@ -29,7 +29,7 @@ tags:
 }
 ```
 
-{% ipfs QmNxBBszArR4ZJmwrFXrNVPDRL2oYLZadgsRLP9MtK3aY4,"justify-items: center" %}
+![justify-items: center](https://i.imgur.com/wG0Am9j.png)
 
 ### align-items
 
@@ -42,7 +42,7 @@ tags:
 }
 ```
 
-{% ipfs QmWb4R11dAeKzrmgDQiCpHh3MGaNdgiNxQuij4RJDSHenV, "align-items: center" %}
+![align-items: center](https://i.imgur.com/LLGuCjP.png)
 
 ### justify-self
 
@@ -57,7 +57,7 @@ tags:
 </div>
 ```
 
-{% ipfs QmXSg8Xp1AbEWvGaTCXG81dW3pLSSXRVMkCDU5CYkfakAT, "justify-self" %}
+![justify-self](https://i.imgur.com/8LQiWmM.png)
 
 ### align-self
 
@@ -72,7 +72,7 @@ tags:
 </div>
 ```
 
-{% ipfs QmYm1FKjQGhNDzHygM992Ea6X7H6QiJQoTSWrEdr3ndEkv, "align-self" %}
+![align-self](https://i.imgur.com/LiL8uw2.png)
 
 ## 案例模板 2
 
@@ -96,7 +96,7 @@ tags:
 }
 ```
 
-{% ipfs QmehTc9JNoKnrSec2kcBZ7JfPu7tWkCGXdCpYZisct4cPr, "justify-content: center" %}
+![justify-content: center](https://i.imgur.com/GqSpqmv.png)
 
 ### align-content
 
@@ -107,7 +107,7 @@ tags:
 }
 ```
 
-{% ipfs Qme3VHtCXQ5B6XMgAJo4Fo9MsC2QRjw4f1UKXvU8HfhoZx, "align-content: center" %}
+![align-content: center](https://i.imgur.com/PyZiaF1.png)
 
 ## Change log
 

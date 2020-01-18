@@ -174,7 +174,7 @@ sudo service nginx start
 sudo service nginx restart
 ```
 
-{% ipfs QmVxfRojSzr5NsUML7eMSbqkS6udr3LGe27JaHEouzQ62t, Web UI %}
+![Web UI](https://i.imgur.com/LeXnkLQ.png)
 
 在 UI 界面上可以看到两行命令，复制他们，并在服务器上执行。
 

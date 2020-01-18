@@ -25,4 +25,4 @@ tags:
 
 通过域名供应商的 DNS 记录，设置 A 记录到你服务器所在的 IP。
 
-{% ipfs QmV67AU85wuoQ61Bv5roxEBSXLwgae68SooC7oAuQcGrTf %}
+![](https://i.imgur.com/AZTKmsW.png)

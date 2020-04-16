@@ -6,6 +6,8 @@ favicon:
   android_manifest: /images/favicon/manifest.json
   ms_browserconfig: /images/favicon/browserconfig.xml
 
+read_more_btn: false
+
 avatar:
   url: /images/avatar.png
   rounded: true

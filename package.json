@@ -22,10 +22,7 @@
   "scripts": {
     "start": "nodemon -e js,md,yaml,yml --exec 'hexo server --draft'",
     "clean": "hexo clean",
-    "deploy": "node deploy.js",
-    "plugin": "node clone-plugin.js",
-    "build": "npm run plugin && hexo generate",
-    "push": "node push.js"
+    "build": "hexo generate"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

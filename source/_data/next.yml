@@ -8,7 +8,6 @@ favicon:
 
 read_more_btn: false
 
-# Post meta display settings
 post_meta:
   item_text: false
   created_at: true
@@ -20,18 +19,13 @@ post_meta:
 avatar:
   url: /images/avatar.png
   rounded: true
-  opacity: 1
   rotated: false
 
 menu:
-  home: / || home
-  # about: /about/ || user
-  tags: /tags/ || tags
-  categories: /categories/ || th-list
-  archives: /archives/ || archive
-  # schedule: /schedule/ || calendar
-  # sitemap: /sitemap.xml || sitemap
-  # commonweal: /404/ || heartbeat
+  home: / || fa fa-home
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th-list
+  archives: /archives/ || fa fa-archive
 
 menu_settings:
   icons: true
@@ -40,19 +34,14 @@ menu_settings:
 footer:
   since: 2019
   icon:
-    name: heart
+    name: fa fa-heart
     animated: true
     color: '#d81e06'
-  powered:
-    enable: false
-    version: false
-  theme:
-    enable: false
-    version: false
+  powered: false
 
-seo: true
-
+index_with_subtitle: true
 exturl: true
+baidu_push: true
 
 # scheme: Muse
 # scheme: Mist
@@ -60,41 +49,39 @@ scheme: Pisces
 # scheme: Gemini
 
 social:
-  GitHub: https://github.com/lastingman || github
-  E-Mail: mailto:keithleaves@gmail.com || envelope
+  GitHub: https://github.com/lastingman || fab fa-github
+  E-Mail: mailto:keithleaves@gmail.com || fa fa-envelope
 
 social_icons:
   enable: true
   icons_only: true
-  transition: false
+  transition: true
 
 sidebar:
   width: 300
-  display: none
+  display: hide
 
-highlight_theme: night eighties
+codeblock:
+  # Code Highlight theme
+  # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles
+  theme:
+    light: solarized-light
+    dark: solarized-dark
+  # Add copy button on codeblock
+  copy_button:
+    enable: true
+    # Show text copy result.
+    show_result: true
+    # Available values: default | flat | mac
+    style: flat
 
 tagcloud:
-  enable: true
-  min: 16 # min font size in px
-  max: 32 # max font size in px
-  start: '#fcd78e' # start color (hex, rgba, hsla or color keywords)
-  end: '#20decb' # end color (hex, rgba, hsla or color keywords)
-  amount: 200 # amount of tags, change it if you have more than 200 tags
+  min: 16
+  max: 32
 
 note:
-  # [class]   : default | primary | success | info | warning | danger.
-  # [no-icon] : Disable icon in note.
-  # Note tag style values:
-  #  - simple    bs-callout old alert style. Default.
-  #  - modern    bs-callout new (v2-v3) alert style.
-  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-  #  - disabled  disable all CSS styles import of note tag.
   style: simple
   icons: true
-  border_radius: 3
-  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
-  # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
 ##################### plugin settings
@@ -109,54 +96,20 @@ symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: true
-  awl: 4
-  wpm: 275
 
 fancybox: true
 
-###################### Gitalk
-gitalk:
-  enable: false
-  github_id: lastingman # Github repo owner
-  repo: blog-like # Repository name to store issues
-  client_id: d9746a249c09c71b1092 # Github Application Client ID
-  client_secret: 7ca491b5043694a5753a798e14436a315ca755a0 # Github Application Client Secret
-  admin_user: lastingman # GitHub repo owner and collaborators, only these guys can initialize github issues
-  distraction_free_mode: true # Facebook-like distraction free mode
-  # Gitalk's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
-  language:
+tag_icon: true
 
-# Disqus #
-##########
 disqus:
   enable: true
   shortname: likes-blog
-  count: false
-  lazyload: false
-  #post_meta_order: 0
 
-######################## analytics
-## Baidu Analytics ID
-# baidu_analytics: 6f67c17b22d42842126f6dc9105691a5
-
-## Google Analytics
 google_analytics:
   tracking_id: UA-138664390-1
   localhost_ignored: true
 
-######################### other setting
-# show number of visitors to each article.
-# firestore:
-#   enable: true
-#   collection: articles
-#   apiKey: AIzaSyA4Fx0QxkH-2FqlWo3EroEXEAdcub7YD68
-#   projectId: blog-921212
-#   bluebird: true
 leancloud_visitors:
   enable: true
   app_id: BKchkFdEIsKU3vlVpVK7anzb-gzGzoHsz
   app_key: evfAMPDtAY6Sh1HKfjw162EV
-  security: false
-  betterPerformance: true

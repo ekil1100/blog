@@ -21,12 +21,6 @@ avatar:
   rounded: true
   rotated: false
 
-menu:
-  home: / || fa fa-home
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th-list
-  archives: /archives/ || fa fa-archive
-
 menu_settings:
   icons: true
   badges: true

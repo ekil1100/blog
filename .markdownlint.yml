@@ -1,8 +1,0 @@
-no-emphasis-as-heading:
-  punctuation: '。'
-line-length:
-  line_length:
-    boolean: false
-no-inline-html: false
-no-duplicate-header:
-  allow_different_nesting: true

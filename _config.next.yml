@@ -26,7 +26,6 @@ avatar:
 menu_settings:
   icons: true
   badges: true
-
 footer:
   since: 2019
   icon:
@@ -34,65 +33,34 @@ footer:
     animated: true
     color: '#d81e06'
   powered: false
-
 index_with_subtitle: true
 exturl: true
-baidu_push: true
 
-# scheme: Muse
+scheme: Muse
 # scheme: Mist
-scheme: Pisces
+# scheme: Pisces
 # scheme: Gemini
 
 social:
   GitHub: https://github.com/lastingman || fab fa-github
   E-Mail: mailto:keithleaves@gmail.com || fa fa-envelope
-
 social_icons:
   enable: true
   icons_only: true
   transition: true
-
-sidebar:
-  width: 300
-  display: hide
-
-codeblock:
-  # Code Highlight theme
-  # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles
-  theme:
-    light: github-gist
-    dark: night-owl
-  # Add copy button on codeblock
-  copy_button:
-    enable: true
-    # Show text copy result.
-    show_result: true
-    # Available values: default | flat | mac
-    style: flat
-
 tagcloud:
   min: 16
   max: 32
-
-note:
-  style: simple
-  icons: true
-  light_bg_offset: 0
-
-##################### plugin settings
+# ##################### plugin settings
 pangu: true
-
 reading_progress:
   enable: true
   color: '#37c6c0'
   height: 4px
-
 symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: true
-
 fancybox: true
 
 tag_icon: true
@@ -100,10 +68,6 @@ tag_icon: true
 disqus:
   enable: true
   shortname: likes-blog
-
-google_analytics:
-  tracking_id: UA-138664390-1
-  localhost_ignored: true
 
 leancloud_visitors:
   enable: true

@@ -1,4 +1,4 @@
-darkmode: true
+# darkmode: true
 
 favicon:
   small: /images/favicon/favicon-16x16.png
@@ -51,6 +51,25 @@ social_icons:
 tagcloud:
   min: 16
   max: 32
+
+motion:
+  enable: true
+  async: true
+  transition:
+    # All available transition variants: https://theme-next.js.org/animate/
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    # Only for Pisces | Gemini.
+    sidebar: fadeInUp
+# Canvas ribbon
+# For more information: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: true
+  size: 300 # The width of the ribbon
+  alpha: 0.4 # The transparency of the ribbon
+  zIndex: -1 # The display level of the ribbon
 # ##################### plugin settings
 pangu: true
 reading_progress:

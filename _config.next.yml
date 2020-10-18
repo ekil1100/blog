@@ -92,6 +92,8 @@ leancloud_visitors:
   enable: true
   app_id: BKchkFdEIsKU3vlVpVK7anzb-gzGzoHsz
   app_key: evfAMPDtAY6Sh1HKfjw162EV
+  server_url: https://bkchkfde.lc-cn-n1-shared.com
+  security: false
 
 codeblock:
   # Code Highlight theme

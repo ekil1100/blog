@@ -100,13 +100,6 @@ reading_progress:
 
 pangu: true
 
-leancloud_visitors:
-  enable: true
-  app_id: BKchkFdEIsKU3vlVpVK7anzb-gzGzoHsz
-  app_key: evfAMPDtAY6Sh1HKfjw162EV
-  security: false
-  betterPerformance: true
-
 # rss
 feed:
   type: atom

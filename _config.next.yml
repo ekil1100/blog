@@ -85,7 +85,7 @@ fancybox: true
 tag_icon: true
 
 disqus:
-  enable: true
+  enable: false
   shortname: likes-blog
 
 leancloud_visitors:

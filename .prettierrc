@@ -7,10 +7,11 @@
     "trailingComma": "all",
     "overrides": [
         {
-            "files": ["*.md", "*.yaml", "*.yml"],
+            "files": ["*.md", "*.yaml", "*.yml", "*.json"],
             "options": {
                 "tabWidth": 2
             }
         }
-    ]
+    ],
+    "plugins": ["prettier-plugin-tailwindcss"]
 }

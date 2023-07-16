@@ -19,3 +19,21 @@
     src: url(/fonts/LXGWWenKai-Bold.ttf) format('truetype');
     font-weight: bold;
 }
+
+@font-face {
+    font-family: 'LXGW WenKai Mono';
+    src: url(/fonts/LXGWWenKaiMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LXGW WenKai Mono';
+    src: url(/fonts/LXGWWenKaiMono-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LXGW WenKai Mono';
+    src: url(/fonts/LXGWWenKaiMono-Bold.ttf) format('truetype');
+    font-weight: bold;
+}

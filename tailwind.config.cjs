@@ -13,8 +13,9 @@ module.exports = {
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
             fontFamily: {
-                input: ['Input', 'ui-sans-serif'],
-                body: ['LXGW WenKai', 'Inter', 'ui-sans-serif'],
+                'input': ['Input', 'ui-sans-serif'],
+                'body': ['LXGW WenKai', 'Inter', 'ui-sans-serif'],
+                'body-mono': ['LXGW WenKai Mono', 'ui-monospace'],
             },
         },
     },

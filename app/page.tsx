@@ -10,15 +10,15 @@ import MdiCalendarBlankOutline from '@/icons/MdiCalendarBlankOutline'
 
 function PostCard(post: (typeof allPosts)[0]) {
     return (
-        <div>
+        <div className='space-y-2 p-4'>
             <h2 className='text-2xl'>
                 <Link href={post.url}>{post.title}</Link>
             </h2>
-            <div className='flex gap-3 text-sm'>
+            <div className='flex gap-3 text-xs'>
                 <div className='flex items-center gap-1'>
                     <MdiCalendarBlankOutline />
                     <time dateTime={post.date}>
-                        {format(parseISO(post.date), 'yyyy-MM-dd')}
+                        {format(parseISO(post.date), 'yyyy.MM.dd')}
                     </time>
                 </div>
                 <div className='flex items-center gap-1'>
@@ -46,7 +46,7 @@ function Home() {
                 </div>
             </header>
 
-            <main className='font-body'>
+            <main className='m-auto flex max-w-2xl flex-col gap-8 overflow-hidden px-4 py-16 font-body'>
                 {posts.map((post, idx) => (
                     <PostCard key={idx} {...post} />
                 ))}

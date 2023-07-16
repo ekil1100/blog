@@ -1,5 +1,5 @@
 ---
-title: _example
+title: _Example
 date: 2023-6-18
 ---
 

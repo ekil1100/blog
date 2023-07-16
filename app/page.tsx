@@ -31,9 +31,11 @@ function PostCard(post: (typeof allPosts)[0]) {
 }
 
 function Home() {
-    const posts = allPosts.sort((a, b) =>
-        compareDesc(parseISO(a.date), parseISO(b.date)),
-    )
+    const posts = allPosts
+        .sort((a, b) => compareDesc(parseISO(a.date), parseISO(b.date)))
+        .filter((post) =>
+            process.env.NODE_ENV === 'development' ? true : post.draft !== true,
+        )
 
     return (
         <>

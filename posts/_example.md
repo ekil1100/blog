@@ -1,6 +1,7 @@
 ---
 title: _Example
 date: 2023-6-18
+draft: true
 ---
 
 **Advertisement :)**

@@ -14,10 +14,10 @@ module.exports = {
             },
             fontFamily: {
                 'input': ['Input', 'ui-sans-serif'],
-                'body': ['LXGW WenKai', 'Inter', 'ui-sans-serif'],
-                'body-mono': ['LXGW WenKai Mono', 'ui-monospace'],
+                'body': ['PingFang SC', 'SF Pro Text', '-apple-system', 'BlinkMacSystemFont', 'ui-sans-serif'],
+                'body-mono': ['Cascadia Code', 'SFMono-Regular', 'ui-monospace'],
             },
         },
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/typography')],
 }

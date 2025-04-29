@@ -1,20 +1,27 @@
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
-import { allPosts } from 'contentlayer/generated'
+import { getAllPostIds, getPostData } from '@/lib/posts'
+import type { Metadata } from 'next'
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-    const post = allPosts.find(
-        (post) => post._raw.flattenedPath === params.slug,
-    )
+type Props = {
+    params: { slug: string }
+    searchParams: Record<string, string | string[] | undefined>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const post = await getPostData(params.slug)
     return {
-        title: post?.title,
+        title: post.title,
     }
 }
 
-function Post({ params }: { params: { slug: string } }) {
-    const post = allPosts.find(
-        (post) => post._raw.flattenedPath === params.slug,
-    )
+export async function generateStaticParams() {
+    const paths = getAllPostIds()
+    return paths
+}
+
+export default async function Post({ params }: Props) {
+    const post = await getPostData(params.slug)
 
     return (
         <article className='mx-auto max-w-2xl py-16'>
@@ -27,19 +34,15 @@ function Post({ params }: { params: { slug: string } }) {
                 </Link>
             </div>
             <div className='mb-6 text-center'>
-                <h1 className='mb-1 text-3xl font-bold'>{post?.title}</h1>
-                <time dateTime={post?.date} className='text-sm text-slate-600'>
-                    {post
-                        ? format(parseISO(post.date), 'LLLL d, yyyy')
-                        : 'unknown'}
+                <h1 className='mb-1 text-3xl font-bold'>{post.title}</h1>
+                <time dateTime={post.date} className='text-sm text-slate-600'>
+                    {format(parseISO(post.date), 'LLLL d, yyyy')}
                 </time>
             </div>
             <div
-                className='cl-post-body'
-                dangerouslySetInnerHTML={{ __html: post?.body.html ?? '' }}
+                className='blog-post-content'
+                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
             />
         </article>
     )
 }
-
-export default Post

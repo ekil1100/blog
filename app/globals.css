@@ -3,37 +3,58 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'LXGW WenKai';
-    src: url(/fonts/LXGWWenKai-Regular.ttf) format('truetype');
+    font-family: 'Cascadia Code';
+    src: url(/fonts/CascadiaCode.ttf) format('truetype');
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'LXGW WenKai';
-    src: url(/fonts/LXGWWenKai-Light.ttf) format('truetype');
-    font-weight: 300;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+  }
 }
 
-@font-face {
-    font-family: 'LXGW WenKai';
-    src: url(/fonts/LXGWWenKai-Bold.ttf) format('truetype');
-    font-weight: bold;
+.blog-post-content {
+  @apply prose prose-slate max-w-none dark:prose-invert;
 }
 
-@font-face {
-    font-family: 'LXGW WenKai Mono';
-    src: url(/fonts/LXGWWenKaiMono-Regular.ttf) format('truetype');
-    font-weight: normal;
+.blog-post-content h1 {
+  @apply text-3xl font-bold mt-8 mb-4;
 }
 
-@font-face {
-    font-family: 'LXGW WenKai Mono';
-    src: url(/fonts/LXGWWenKaiMono-Light.ttf) format('truetype');
-    font-weight: 300;
+.blog-post-content h2 {
+  @apply text-2xl font-bold mt-6 mb-3;
 }
 
-@font-face {
-    font-family: 'LXGW WenKai Mono';
-    src: url(/fonts/LXGWWenKaiMono-Bold.ttf) format('truetype');
-    font-weight: bold;
+.blog-post-content h3 {
+  @apply text-xl font-bold mt-4 mb-2;
+}
+
+.blog-post-content p {
+  @apply my-4;
+}
+
+.blog-post-content ul {
+  @apply list-disc pl-5 my-4;
+}
+
+.blog-post-content ol {
+  @apply list-decimal pl-5 my-4;
+}
+
+.blog-post-content a {
+  @apply text-blue-600 hover:underline;
+}
+
+.blog-post-content pre {
+  @apply bg-gray-800 text-gray-200 p-4 rounded-md overflow-auto my-4 font-body-mono;
+}
+
+.blog-post-content code {
+  @apply bg-gray-800 text-gray-200 px-1 py-0.5 rounded font-body-mono;
+}
+
+.blog-post-content blockquote {
+  @apply border-l-4 border-gray-500 pl-4 italic;
 }

@@ -1,18 +1,18 @@
 import Link from 'next/link'
-import { compareDesc, format, parseISO } from 'date-fns'
-import { allPosts } from 'contentlayer/generated'
+import { format, parseISO } from 'date-fns'
 import MdiClockTimeFourOutline from '@/icons/MdiClockTimeFourOutline'
 import MdiGithub from '@/icons/MdiGithub'
 import MdiRssBox from '@/icons/MdiRssBox'
 import MdiTwitter from '@/icons/MdiTwitter'
-import { readTime } from '@/utils/read-time'
 import MdiCalendarBlankOutline from '@/icons/MdiCalendarBlankOutline'
+import { getSortedPostsData, readingTime } from '@/lib/posts'
+import { PostMeta } from '@/lib/posts'
 
-function PostCard(post: (typeof allPosts)[0]) {
+function PostCard(post: PostMeta) {
     return (
         <div className='space-y-2 p-4'>
             <h2 className='text-2xl'>
-                <Link href={post.url}>{post.title}</Link>
+                <Link href={`/posts/${post.id}`}>{post.title}</Link>
             </h2>
             <div className='flex gap-3 text-xs'>
                 <div className='flex items-center gap-1'>
@@ -21,21 +21,15 @@ function PostCard(post: (typeof allPosts)[0]) {
                         {format(parseISO(post.date), 'yyyy.MM.dd')}
                     </time>
                 </div>
-                <div className='flex items-center gap-1'>
-                    <MdiClockTimeFourOutline />
-                    <span>{readTime(post.body.raw)}</span>
-                </div>
             </div>
         </div>
     )
 }
 
-function Home() {
-    const posts = allPosts
-        .sort((a, b) => compareDesc(parseISO(a.date), parseISO(b.date)))
-        .filter((post) =>
-            process.env.NODE_ENV === 'development' ? true : post.draft !== true,
-        )
+export default function Home() {
+    const posts = getSortedPostsData().filter((post) =>
+        process.env.NODE_ENV === 'development' ? true : post.draft !== true,
+    )
 
     return (
         <>
@@ -56,5 +50,3 @@ function Home() {
         </>
     )
 }
-
-export default Home

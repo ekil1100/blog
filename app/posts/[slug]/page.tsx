@@ -1,15 +1,12 @@
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
 import { getAllPostIds, getPostData } from '@/lib/posts'
-import type { Metadata } from 'next'
 
-type Props = {
-    params: { slug: string }
-    searchParams: Record<string, string | string[] | undefined>
-}
+type Params = Promise<{ slug: string }>
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const post = await getPostData(params.slug)
+export async function generateMetadata({ params }: { params: Params }) {
+    const slug = (await params).slug
+    const post = await getPostData(slug)
     return {
         title: post.title,
     }
@@ -20,8 +17,9 @@ export async function generateStaticParams() {
     return paths
 }
 
-export default async function Post({ params }: Props) {
-    const post = await getPostData(params.slug)
+export default async function Post({ params }: { params: Params }) {
+    const slug = (await params).slug
+    const post = await getPostData(slug)
 
     return (
         <article className='mx-auto max-w-2xl py-16'>

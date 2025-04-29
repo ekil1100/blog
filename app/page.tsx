@@ -33,13 +33,8 @@ export default function Home() {
 
     return (
         <>
-            <header className='m-auto flex max-w-[1440px] items-center justify-between px-8 py-4'>
-                <h1 className='font-input'>Like</h1>
-                <div className='flex gap-2'>
-                    <MdiGithub />
-                    <MdiTwitter />
-                    <MdiRssBox />
-                </div>
+            <header className='m-auto flex max-w-[1440px] items-end justify-between px-8 py-4'>
+                <h1 className='font-input text-lg'>LiKe</h1>
             </header>
 
             <main className='m-auto flex max-w-2xl flex-col gap-8 overflow-hidden px-4 py-16 font-body'>

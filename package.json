@@ -1,6 +1,9 @@
 {
   "name": "blog",
   "version": "0.1.0",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.4",
     "@tailwindcss/typography": "^0.5.19",

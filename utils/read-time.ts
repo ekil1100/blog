@@ -9,7 +9,7 @@ export function readTime(text: string) {
         return '> 1min'
     }
     if (time > 60) {
-        let hour = Math.floor(time / 60)
+        const hour = Math.floor(time / 60)
         return `${hour}h${time % 60}min`
     }
     return `${time}min`

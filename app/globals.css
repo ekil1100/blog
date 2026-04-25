@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-input: Input, ui-sans-serif;
+  --font-body: "PingFang SC", "SF Pro Text", -apple-system, BlinkMacSystemFont, ui-sans-serif;
+  --font-body-mono: "Cascadia Code", SFMono-Regular, ui-monospace;
+}
 
 @font-face {
     font-family: 'Cascadia Code';
@@ -16,7 +21,7 @@
 }
 
 .blog-post-content {
-  @apply prose prose-slate max-w-none dark:prose-invert;
+  @apply prose prose-invert max-w-none;
 }
 
 .blog-post-content h1 {
@@ -44,15 +49,61 @@
 }
 
 .blog-post-content a {
-  @apply text-blue-600 hover:underline;
+  @apply text-sky-300 hover:text-sky-200 hover:underline;
 }
 
 .blog-post-content pre {
-  @apply bg-gray-800 text-gray-200 p-4 rounded-md overflow-auto my-4 font-body-mono;
+  @apply bg-gray-950 text-gray-100 p-4 rounded-md overflow-auto my-4 font-body-mono border border-gray-800;
 }
 
 .blog-post-content code {
-  @apply bg-gray-800 text-gray-200 px-1 py-0.5 rounded font-body-mono;
+  @apply bg-gray-900 text-gray-100 px-1 py-0.5 rounded font-body-mono;
+}
+
+.blog-post-content pre code {
+  @apply bg-transparent p-0 text-inherit;
+}
+
+.blog-post-content .hljs-comment,
+.blog-post-content .hljs-quote {
+  @apply text-slate-500;
+}
+
+.blog-post-content .hljs-keyword,
+.blog-post-content .hljs-selector-tag,
+.blog-post-content .hljs-subst {
+  @apply text-fuchsia-300;
+}
+
+.blog-post-content .hljs-literal,
+.blog-post-content .hljs-number,
+.blog-post-content .hljs-tag .hljs-attr,
+.blog-post-content .hljs-template-variable,
+.blog-post-content .hljs-variable {
+  @apply text-orange-300;
+}
+
+.blog-post-content .hljs-doctag,
+.blog-post-content .hljs-string,
+.blog-post-content .hljs-title,
+.blog-post-content .hljs-section,
+.blog-post-content .hljs-selector-id {
+  @apply text-emerald-300;
+}
+
+.blog-post-content .hljs-type,
+.blog-post-content .hljs-class .hljs-title,
+.blog-post-content .hljs-built_in,
+.blog-post-content .hljs-builtin-name {
+  @apply text-sky-300;
+}
+
+.blog-post-content .hljs-name,
+.blog-post-content .hljs-attribute,
+.blog-post-content .hljs-meta,
+.blog-post-content .hljs-symbol,
+.blog-post-content .hljs-bullet {
+  @apply text-blue-300;
 }
 
 .blog-post-content blockquote {

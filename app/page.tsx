@@ -1,11 +1,7 @@
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
-import MdiClockTimeFourOutline from '@/icons/MdiClockTimeFourOutline'
-import MdiGithub from '@/icons/MdiGithub'
-import MdiRssBox from '@/icons/MdiRssBox'
-import MdiTwitter from '@/icons/MdiTwitter'
 import MdiCalendarBlankOutline from '@/icons/MdiCalendarBlankOutline'
-import { getSortedPostsData, readingTime } from '@/lib/posts'
+import { getSortedPostsData } from '@/lib/posts'
 import { PostMeta } from '@/lib/posts'
 
 function PostCard(post: PostMeta) {
